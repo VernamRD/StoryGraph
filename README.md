@@ -26,6 +26,8 @@ To create Visual Studio project file right click on UE project file and choose "
 
 - Обновление: Добавлена поддержка [IWYU](https://docs.unrealengine.com/latest/INT/Programming/UnrealBuildSystem/IWYUReferenceGuide/index.html). Проект будет компилироваться быстрее но только на версии 4.15 и выше.
 
+- Fork Taranov: Added support UE 4.24 and some refactorings with redirects to support backward compatibility.
+
 [Habrahabr](https://habrahabr.ru/post/318366/)
 
 [Сompiled demo game](https://cloud.mail.ru/public/J6Y2/gPCyFRBPG)
