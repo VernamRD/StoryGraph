@@ -193,7 +193,7 @@ public:
 	virtual void LoadPropertyFromXML(std::map<FString, XMLProperty>& Properties) override;
 
 	template <class ReturnType, class ObjectType>
-	void TExtractSceneObjects(TArray<ReturnType*>& SceneObjects, TArray<TAssetPtr<ObjectType>> SceneLazyPointerArray,
+	void TExtractSceneObjects(TArray<ReturnType*>& SceneObjects, TArray<TSoftObjectPtr<ObjectType>> SceneLazyPointerArray,
 	                          TArray<ObjectType*> ScenePointerArray)
 	{
 		SceneObjects.Empty();
@@ -227,7 +227,7 @@ class STORYGRAPHPLUGINRUNTIME_API UStoryGraphCharacter : public UStoryGraphObjec
 
 public:
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite)
-	TArray<TAssetPtr<class ACharacter_StoryGraph>> SceneCharacters;
+	TArray<TSoftObjectPtr<class ACharacter_StoryGraph>> SceneCharacters;
 
 	UPROPERTY()
 	FText DefaultAnswer;
@@ -353,7 +353,7 @@ class STORYGRAPHPLUGINRUNTIME_API UStoryGraphPlaceTrigger : public UStoryGraphOb
 public:
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite)
-	TArray<TAssetPtr<class APlaceTrigger_StoryGraph>> ScenTriggers;
+	TArray<TSoftObjectPtr<class APlaceTrigger_StoryGraph>> ScenTriggers;
 
 	UPROPERTY()
 	TArray<class APlaceTrigger_StoryGraph*> PlaceTriggerPointers;
@@ -429,7 +429,7 @@ public:
 	bool InventoryItemWithoutSceneObject;
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite)
-	TArray<TAssetPtr<class AInventoryItem_StoryGraph>> SceneInventoryItems;
+	TArray<TSoftObjectPtr<class AInventoryItem_StoryGraph>> SceneInventoryItems;
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite)
 	UTexture2D* Icon;
@@ -477,7 +477,7 @@ class STORYGRAPHPLUGINRUNTIME_API UStoryGraphOthers : public UStoryGraphObjectWi
 public:
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite)
-	TArray<TAssetPtr<class AOtherActor_StoryGraph>> SceneOtherObjects;
+	TArray<TSoftObjectPtr<class AOtherActor_StoryGraph>> SceneOtherObjects;
 
 	UPROPERTY()
 	TArray<class AOtherActor_StoryGraph*> OtherPointers;

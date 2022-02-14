@@ -13,7 +13,8 @@ public class StoryGraphPluginEditor : ModuleRules
             "CoreUObject",
             "InputCore",
             "Engine",
-            "ApplicationCore"
+            "ApplicationCore",
+            "DeveloperSettings"
         });
 
         PrivateDependencyModuleNames.AddRange(new string[] {
