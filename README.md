@@ -12,6 +12,10 @@ To create Visual Studio project file right click on UE project file and choose "
 
 - Update: Enabel [IWYU](https://docs.unrealengine.com/latest/INT/Programming/UnrealBuildSystem/IWYUReferenceGuide/index.html). Project will compile faster, but will not compile on version UE lower than 4.15.
 
+- Fork Taranov: Added support UE 4.24 and some refactorings with redirects to support backward compatibility.
+
+- Fork VernamRD: Added Support UE 5.0. Additional functionality and compatibility testing is required.
+
 ## Редактор квестов и диалого для UnrealEngine.
 
 При помощи этого плагина вы сможете создавать квесты и диалоги для своей игры в удобном графическом интерфейсе.
@@ -26,7 +30,9 @@ To create Visual Studio project file right click on UE project file and choose "
 
 - Обновление: Добавлена поддержка [IWYU](https://docs.unrealengine.com/latest/INT/Programming/UnrealBuildSystem/IWYUReferenceGuide/index.html). Проект будет компилироваться быстрее но только на версии 4.15 и выше.
 
-- Fork Taranov: Added support UE 4.24 and some refactorings with redirects to support backward compatibility.
+- Fork Taranov: Добавлена поддержка UE 4.24 и некоторые доработки с перенаправлениями для поддержки обратной совместимости.
+
+- Fork VernamRD: Добавлена поддержка UE 5.0. Требуется дополнительное тестирование функциональности и совместимости.
 
 [Habrahabr](https://habrahabr.ru/post/318366/)
 
